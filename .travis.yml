@@ -1,7 +1,10 @@
 language: c
 compiler:
   - gcc
-  - clang
+#  - clang
+os:
+  - linux
+  - osx
 # Change this to your needs
 sudo: false
 script: ./configure && make && make check
